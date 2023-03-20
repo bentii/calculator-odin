@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calulator</title>
+</head>
+<body>
+    <button id="n0" name="0" onclick="inputDig(this.name)">0</button>
+    <button id="n1" name="1" onclick="inputDig(this.name)">1</button>
+    <button id="n2" name="2" onclick="inputDig(this.name)">2</button>
+    <button id="n3" name="3" onclick="inputDig(this.name)">3</button>
+    <button id="n4" name="4" onclick="inputDig(this.name)">4</button>
+    <button id="n5" name="5" onclick="inputDig(this.name)">5</button>
+    <button id="n6" name="6" onclick="inputDig(this.name)">6</button>
+    <button id="n7" name="7" onclick="inputDig(this.name)">7</button>
+    <button id="n8" name="8" onclick="inputDig(this.name)">8</button>
+    <button id="n9" name="9" onclick="inputDig(this.name)">9</button>
+    <button id="ponto" name="." onclick="inputPonto(this.name)">.</button>
+    <button id="add" name="+" onclick="inputSig(this.name)">+</button>
+    <button id="sub" name="-" onclick="inputSig(this.name)">-</button>
+    <button id="mult" name="*" onclick="inputSig(this.name)">*</button>
+    <button id="div" name="/" onclick="inputSig(this.name)">/</button>
+    <button id="pot" name="^" onclick="inputSig(this.name)">^</button>
+    <button id="fact" name="!" onclick="inputSig(this.name)">!</button>
+    <button id="openPara" name="&#40" onclick="inputSig(this.name)">&#40</button>
+    <button id="closePara" name="&#41" onclick="inputSig(this.name)">&#41</button>
+    <button id="result" name="=" onclick="inputResult()">=</button>
+    <button onclick="inputBack()">Backspace</button>
+    <button onclick="inputReset()">Reset</button>
+    <div id="tela"></div>
+    <div id="tela2"></div>
+</body>
+</html>
