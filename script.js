@@ -43,9 +43,11 @@ function inputDig(x) {
 }
 
 function inputPonto() {
+  if(ponto == 0){
   ponto = 1;
   sigDisabler();
-  document.getElementById("back").disabled = true;
+  document.getElementById("back").disabled = true;  
+}
 }
 
 function inputSig(x) {
