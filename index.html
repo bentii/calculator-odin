@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +9,44 @@
     <script src="script.js" defer></script>
     <title>Calulator</title>
 </head>
+
 <body>
-    <button id="n0" name="0" onclick="inputDig(this.name)">0</button>
-    <button id="n1" name="1" onclick="inputDig(this.name)">1</button>
-    <button id="n2" name="2" onclick="inputDig(this.name)">2</button>
-    <button id="n3" name="3" onclick="inputDig(this.name)">3</button>
-    <button id="n4" name="4" onclick="inputDig(this.name)">4</button>
-    <button id="n5" name="5" onclick="inputDig(this.name)">5</button>
-    <button id="n6" name="6" onclick="inputDig(this.name)">6</button>
-    <button id="n7" name="7" onclick="inputDig(this.name)">7</button>
-    <button id="n8" name="8" onclick="inputDig(this.name)">8</button>
-    <button id="n9" name="9" onclick="inputDig(this.name)">9</button>
-    <button id="ponto" name="." onclick="inputPonto(this.name)">.</button>
-    <button id="add" name="+" onclick="inputSig(this.name)">+</button>
-    <button id="sub" name="-" onclick="inputSig(this.name)">-</button>
-    <button id="mult" name="*" onclick="inputSig(this.name)">*</button>
-    <button id="div" name="/" onclick="inputSig(this.name)">/</button>
-    <button id="pot" name="^" onclick="inputSig(this.name)">^</button>
-    <button id="fact" name="!" onclick="inputSig(this.name)">!</button>
-    <button id="openPara" name="&#40" onclick="inputSig(this.name)">&#40</button>
-    <button id="closePara" name="&#41" onclick="inputSig(this.name)">&#41</button>
-    <button id="result" name="=" onclick="inputResult()">=</button>
-    <button id="back" onclick="inputBack()">Backspace</button>
-    <button onclick="inputReset()">Reset</button>
-    <div id="tela"></div>
-    <div id="tela2"></div>
+    <div id="container">
+        <div id="monitor">
+        <div id="tela"></div>
+        <div id="tela2"></div>
+        </div>
+        <button id="n0" name="0" onclick="inputDig(this.name)">0</button>
+        <button id="n1" name="1" onclick="inputDig(this.name)">1</button>
+        <button id="n2" name="2" onclick="inputDig(this.name)">2</button>
+        <button id="n3" name="3" onclick="inputDig(this.name)">3</button>
+        <button id="n4" name="4" onclick="inputDig(this.name)">4</button>
+        <button id="n5" name="5" onclick="inputDig(this.name)">5</button>
+        <button id="n6" name="6" onclick="inputDig(this.name)">6</button>
+        <button id="n7" name="7" onclick="inputDig(this.name)">7</button>
+        <button id="n8" name="8" onclick="inputDig(this.name)">8</button>
+        <button id="n9" name="9" onclick="inputDig(this.name)">9</button>
+        <button id="ponto" name="." onclick="inputPonto(this.name)">.</button>
+        <button id="add" name="+" onclick="inputSig(this.name)">+</button>
+        <button id="sub" name="-" onclick="inputSig(this.name)">-</button>
+        <button id="mult" name="*" onclick="inputSig(this.name)">*</button>
+        <button id="div" name="/" onclick="inputSig(this.name)">/</button>
+        <button id="pot" name="^" onclick="inputSig(this.name)">^</button>
+        <button id="fact" name="!" onclick="inputSig(this.name)">!</button>
+        <button id="openPara" name="&#40" onclick="inputSig(this.name)">&#40</button>
+        <button id="closePara" name="&#41" onclick="inputSig(this.name)">&#41</button>
+        <button id="result" name="=" onclick="inputResult()">=</button>
+        <button id="back" onclick="inputBack()">&#8617;</button>
+        <button id="reset" onclick="inputReset()">C</button>
+    </div>
+    <div id="manual"><p><strong>Key Shortcuts:</strong></br></br></br>
+        <strong>Numbers:</strong>&nbsp;&nbsp;     0 - 9</br></br>
+        <strong>Basic Operators:</strong>&nbsp;&nbsp; + Add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Sub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Div&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Mult</br></br>
+        <strong>Other Operators:</strong>&nbsp;&nbsp; ! Factorial&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^ Exponential</br></br>
+        <strong>Brackets:</strong> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)  Math Priority</br></br>
+        <strong>Functions:</strong> &nbsp;&nbsp; ENTER Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BACKSPACE Erase &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHIFT BACKSPACE Reset
+    </p></div>
 </body>
+
 </html>
